@@ -15,4 +15,10 @@ defmodule Pampedi do
   def hello do
     :world
   end
+
+  def send_email(email) do
+    process.sleeo(3000)
+    IO.puts("email #{email}")
+    {:ok, "sent mail"}
+  end
 end
